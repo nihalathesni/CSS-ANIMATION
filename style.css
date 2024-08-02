@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    
+}
+.main{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    height: 100%;
+    width: 60%;
+    background-color:rgb(56, 52, 52) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    height: 60px;
+    width: 250px;
+    background-color: black;
+    border-radius: 50px;
+    display: flex;
+}
+.round{
+    height: 65px;
+    width: 65px;
+    background-color: rgb(106, 234, 106);
+    border-radius: 50%;
+    position: relative;
+    left: 80px;
+    animation: button 1s linear infinite;
+    animation-delay: 1s;
+
+}
+.round:hover{
+    animation-play-state: paused;
+    color: white;
+
+}
+.one{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(181, 162, 162);
+}
+
+
+.two{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(181, 162, 162);
+}
+
+.three{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:  rgb(181, 162, 162);
+}
+
+@keyframes button{
+    0%{
+        left: 80px;
+        background-color: rgb(106, 234, 106);
+    }
+    50%{
+        left:160px;
+        background-color:aqua ;
+    }
+    100%{
+        left: 250px;
+        background-color: pink;
+    }
+}
